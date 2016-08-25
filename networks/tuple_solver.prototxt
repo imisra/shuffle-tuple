@@ -1,0 +1,14 @@
+net: "tuple_train.prototxt"
+snapshot_prefix: "tuple_snapshot"
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 80000
+display: 1
+max_iter: 100000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 0
+solver_mode: GPU
+random_seed: 2
+iter_size: 4 #maintain batchsize of 128
