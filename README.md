@@ -19,7 +19,7 @@ If you find our code useful in your research, please consider citing:
 ```
 @inproceedings{misra2016unsupervised,
   title={{Shuffle and Learn: Unsupervised Learning using Temporal Order Verification}},
-  author={Misra, Ishan and Zitnick, C Lawrence and Hebert, Martial},
+  author={Misra, Ishan and Zitnick, C. Lawrence and Hebert, Martial},
   booktitle={ECCV},
   year={2016}
 }
