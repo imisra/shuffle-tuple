@@ -46,7 +46,7 @@ If you find our code useful in your research, please consider citing:
 You can download a compatible fork of Caffe from [here](https://github.com/BVLC/caffe/tree/8e8d97d6206cac99eae3c16baaa2275a14e64ca7). Note that since our model requires Batch Normalization, you will need to have a fairly recent fork of caffe.
 
 ### Models and Training Data
-1. Our model trained on action recognition videos from UCF101 (train split 1) can be downloaded [here](http://goo.gl/tzHrVH).
+1. Our model trained on tuples from UCF101 (train split 1, without using action labels) can be downloaded [here](http://goo.gl/tzHrVH).
 
 2. The tuples used for training our model can be downloaded as a zipped text file [here](http://goo.gl/QjEDxw). Each line in this file defines a tuple of three frames and has a binary label indicating whether the tuple is in the correct or incorrect order.
 
