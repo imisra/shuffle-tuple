@@ -64,9 +64,9 @@ Pascal Action Classification (VOC2012): Coming soon
 You can download a compatible fork of Caffe from [here](https://github.com/BVLC/caffe/tree/8e8d97d6206cac99eae3c16baaa2275a14e64ca7). Note that since our model requires Batch Normalization, you will need to have a fairly recent fork of caffe.
 
 ### Models and Training Data
-1. Our model trained on action recognition videos from UCF101 (train split 1) can be downloaded [here](http://goo.gl/tzHrVH).
+1. Our model trained on tuples from UCF101 (train split 1, without using action labels) can be downloaded [here](http://goo.gl/tzHrVH).
 
-2. The tuples used for training our model can be downloaded as a zipped text file [here](http://goo.gl/QjEDxw). Each line in this file defines a tuple of three frames and has a binary label indicating whether the tuple is in the correct or incorrect order.
+2. The tuples used for training our model can be downloaded as a zipped text file [here](http://goo.gl/QjEDxw). Each line of the file `train01_image_keys.txt` defines a tuple of three frames. The corresponding file `train01_image_labs.txt` has a binary label indicating whether the tuple is in the correct or incorrect order.
 
 3. Using the training tuples requires you to have the raw videos from the UCF101 dataset ([link to videos](http://crcv.ucf.edu/data/UCF101/UCF101.rar)).
  We extract frames from the videos and resize them such that the max dimension is 340 pixels.
