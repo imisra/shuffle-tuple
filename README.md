@@ -1,16 +1,13 @@
 ## Shuffle and Learn (Shuffle Tuple)
 Created by [Ishan Misra](http://www.cs.cmu.edu/~imisra/)
 
-Based on the ECCV 2016 Paper - "Shuffle and Learn: Unsupervised Learning using Temporal Order Verification"
-
-You can download the paper [here](http://arxiv.org/abs/1603.08561).
+Based on the ECCV 2016 Paper - "Shuffle and Learn: Unsupervised Learning using Temporal Order Verification" [link to paper](http://arxiv.org/abs/1603.08561).
 
 This codebase contains the model and training data from our paper.
 
 ### Introduction
 
 Our code base is a mix of Python and C++ and uses the [Caffe](https://github.com/BVLC/caffe) framework.
-
 Design decisions and some code is derived from the [Fast-RCNN codebase](https://github.com/rbgirshick/fast-rcnn) by Ross Girshick.
 
 ### Citing
@@ -24,6 +21,27 @@ If you find our code useful in your research, please consider citing:
   year={2016}
 }
 ```
+### Benchmark Results
+We summarize the results of finetuning our method here (details in the paper).
+
+**Action Recognition**
+
+| Dataset | Accuracy (split 1) | Accuracy (mean over splits)
+:--- | :--- | :--- | :---
+UCF101 | 50.9 | 50.2
+HMDB51 | 19.8 | 18.1
+
+Pascal Action Classification (VOC2012): Coming soon
+
+**Pose estimation**
+- FLIC: PCK (Mean, AUC) 84.7, 49.6
+- MPII: PCKh@0.5 (Upper, Full, AUC): 87.7, 85.8, 47.6
+
+**Object Detection**
+- PASCAL VOC2007 test mAP of 42.4 (Details coming soon)
+
+**Surface Normal Prediction**
+- NYUv2 (Coming soon)
 
 ### Contents
 1. [Requirements: software](#requirements-software)
