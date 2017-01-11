@@ -38,7 +38,9 @@ Pascal Action Classification (VOC2012): Coming soon
 - MPII: PCKh@0.5 (Upper, Full, AUC): 87.7, 85.8, 47.6
 
 **Object Detection**
-- PASCAL VOC2007 test mAP of 42.4 (Details coming soon)
+- PASCAL VOC2007 test mAP of 42.4% using Fast RCNN
+We initialize conv1-5 using our unsupervised pre-training. We initialize fc6-8 randomly.
+We then follow the procedure from Krahenbuhl et al., 2016 to rescale our network and finetune all layers using their hyperparameters.
 
 **Surface Normal Prediction**
 - NYUv2 (Coming soon)
