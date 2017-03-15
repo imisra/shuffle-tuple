@@ -153,6 +153,20 @@ class MultipleImageMultipleLabelDataLayer(caffe.Layer):
                     if abs(ii-jj)<=1:
                         self._crop_sizes.append([crop_h, crop_w])
 
+    def rgb_jitter_image(self, im):
+        assert im.shape[2] == 3; #we want a rgb or bgr image (NOT in caffe order)
+        assert im.dtype == np.float32
+        for ch in range(3):
+            thisRand = np.random.uniform(0.8, 1.2000000001); 
+            im[:,:,ch] *= thisRand;
+        shiftVal = np.random.randint(0,6);
+        if np.random.randint(2) == 1:
+            shiftVal = -shiftVal;
+        im += shiftVal;
+        im = im.astype(np.uint8); #cap values to [0,255]
+        im = im.astype(np.float32)
+        return im;
+
     def caffe_read_image(self, imname, shape, immean, caffe_order=True, flip_image = False):
         # tt = timer.Timer();
         # tt.tic();
