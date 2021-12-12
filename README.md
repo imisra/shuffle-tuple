@@ -26,10 +26,10 @@ We summarize the results of finetuning our method here (details in the paper).
 
 **Action Recognition**
 
-| Dataset | Accuracy (split 1) | Accuracy (mean over splits)
-:--- | :--- | :--- | :---
-UCF101 | 50.9 | 50.2
-HMDB51 | 19.8 | 18.1
+| Dataset | Accuracy (split 1) | Accuracy (mean over splits)|
+|:---|:---|:---|
+UCF101 | 50.9 | 50.2 |
+HMDB51 | 19.8 | 18.1 |
 
 Pascal Action Classification (VOC2012): Coming soon
 
